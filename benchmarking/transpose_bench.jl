@@ -10,7 +10,7 @@ using MyGEMM.TransposeNoPacking: multiply_transpose_no_packing!
 using MyGEMM.TransposeMultithreading: multiply_transpose!
 
 Random.seed!(777) # To ensure repeatability
-BLAS.set_num_threads(6) # Don't let BLAS use lots of threads (since we are not multi-threaded yet!)
+BLAS.set_num_threads(6) 
 
 # What precision numbers to use
 FT = Float64
